@@ -1,0 +1,49 @@
+{
+  "name": "opensanctions-to-aleph",
+  "version": "1.0.0",
+  "description": "A command-line tool for importing OpenSanctions datasets into Aleph",
+  "exports": "./dist/index.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "generate-types": "openapi-typescript https://aleph.occrp.org/api/openapi.json --empty-objects-unknown -o src/aleph/aleph.d.mts",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "aleph",
+    "opensanctions",
+    "import"
+  ],
+  "author": "Volodymyr Kolesnykov <volodymyr@wildwolf.name> (https://wildwolf.name)",
+  "license": "MIT",
+  "bin": {
+    "opensanctions-to-aleph": "dist/index.mjs"
+  },
+  "devDependencies": {
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.2",
+    "@types/configstore": "^6.0.2",
+    "@types/debug": "^4.1.12",
+    "@types/node": "^24.0.1",
+    "openapi-typescript": "^7.8.0",
+    "tsimp": "^2.0.12",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@alephdata/followthemoney": "^3.8.4",
+    "configstore": "^7.0.0",
+    "debug": "^4.4.1",
+    "dotenv": "^16.5.0",
+    "openapi-fetch": "^0.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjinks/opensanctions-to-aleph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sjinks/opensanctions-to-aleph/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
