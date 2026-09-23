@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@alephdata/followthemoney": "^3.8.4",
-    "configstore": "^7.0.0",
+    "configstore": "^8.0.0",
     "debug": "^4.4.1",
     "dotenv": "^17.0.0",
     "openapi-fetch": "^0.17.0"
