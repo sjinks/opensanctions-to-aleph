@@ -20,7 +20,7 @@
     "opensanctions-to-aleph": "dist/index.mjs"
   },
   "devDependencies": {
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.2",
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^4.0.0",
     "@types/configstore": "^6.0.2",
     "@types/debug": "^4.1.12",
     "@types/node": "^24.0.1",
