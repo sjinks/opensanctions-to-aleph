@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.2",
-    "@types/configstore": "^6.0.2",
+    "@types/configstore": "^8.0.0",
     "@types/debug": "^4.1.12",
     "@types/node": "^24.0.1",
     "openapi-typescript": "^7.8.0",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@alephdata/followthemoney": "^3.8.4",
-    "configstore": "^7.0.0",
+    "configstore": "^8.0.0",
     "debug": "^4.4.1",
     "dotenv": "^17.0.0",
     "openapi-fetch": "^0.17.0"
